@@ -1,0 +1,142 @@
+/* src/components/Main.css */
+.main {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input {
+    padding: 10px;
+    font-size: 16px;
+    width: 50%; /* Default width */
+    margin-right: 10px;
+    border-radius: 40px;
+}
+
+.select {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #9871f5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+.button:hover {
+    background-color: #692ff2; 
+}
+
+.category-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-box {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    width: 30%; /* Default width */
+    margin-bottom: 20px;
+    background-color: #d7c7fc;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list-item {
+    padding: 10px;
+    background-color: #f4f4f4;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.remove-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-button {
+    background-color: #2196f3;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+/* New styles for inline item details */
+.item-details {
+    display: flex; /* Use flexbox to arrange items inline */
+    align-items: center; /* Center vertically */
+}
+
+.item-name,
+.item-price,
+.item-quantity {
+    margin-right: 15px; /* Space between item details */
+}
+
+/* Existing styles... */
+.checked {
+    text-decoration: line-through; /* Add strikethrough effect */
+    color: gray; /* Optional: change color for checked items */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .input {
+        width: 70%; /* Adjust input width for tablet screens */
+    }
+
+    .category-box {
+        width: 45%; /* Adjust category box width for tablet screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .input {
+        width: 90%; /* Adjust input width for mobile screens */
+    }
+
+    .category-box {
+        width: 100%; /* Make category box full width for mobile screens */
+    }
+
+    .input-container {
+        flex-direction: column; /* Stack input elements vertically */
+        align-items: center; /* Center input elements */
+    }
+
+    .select {
+        margin: 10px 0; /* Add margin for spacing */
+    }
+}
